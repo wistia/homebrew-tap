@@ -1,6 +1,6 @@
 cask "wistia" do
-  version "2026.2.16"
-  sha256 "f0758e3a24a019387b8fce3ebb06f77699f7f565ab3331c254a3572970079e85"
+  version "2026.2.17"
+  sha256 "11ba3a976d4b60f6113a5edb92c33244dfd3365bf2548b7c91497fd6433e105f"
 
   url "https://wistia-glass-updates.s3.amazonaws.com/Glass-#{version}.dmg"
   name "Wistia"
