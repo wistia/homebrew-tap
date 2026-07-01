@@ -5,20 +5,20 @@
 class WistiaCli < Formula
   desc "Data API: Wistia Data API"
   homepage "https://github.com/wistia/wistia-cli"
-  version "2026.5.0"
+  version "2026.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.0/wistia_Darwin_x86_64.tar.gz"
-      sha256 "24e9d6f828aa51c21c158afa8f3f1947a83ce84eff0425c110880a8740e7a6b3"
+      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.1/wistia_Darwin_x86_64.tar.gz"
+      sha256 "8fcfe3c8798c28824e77e1b4dd1b0545f172de3b4aaf34b6652e42c391bcf987"
 
       define_method(:install) do
         bin.install "wistia"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.0/wistia_Darwin_arm64.tar.gz"
-      sha256 "aeb187e8a160f201eb8dfcd17af02ae57c5f5a2998138af87e22785d56e83c1f"
+      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.1/wistia_Darwin_arm64.tar.gz"
+      sha256 "d8106fff0ba18b20a2f0687564e714f7084a8aaea10986d301b2249e36b06248"
 
       define_method(:install) do
         bin.install "wistia"
@@ -28,15 +28,15 @@ class WistiaCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.0/wistia_Linux_x86_64.tar.gz"
-      sha256 "83a37123cb8259c306401d2438c98ca114c706f686a2352df16dd10d611cbbea"
+      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.1/wistia_Linux_x86_64.tar.gz"
+      sha256 "8c61bb3a8ca0255ca1af5e9ca26129dbce5918febe9d9be92beee17157845a58"
       define_method(:install) do
         bin.install "wistia"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.0/wistia_Linux_arm64.tar.gz"
-      sha256 "30f1f9bfa63157aac04b93f353812e415a2de704ab506b29f140a9d6d672d083"
+      url "https://github.com/wistia/wistia-cli/releases/download/v2026.5.1/wistia_Linux_arm64.tar.gz"
+      sha256 "2f69cdb6c7595c4b2b831c044150e2570f1af0deb38cd3e64da6b261569798eb"
       define_method(:install) do
         bin.install "wistia"
       end
